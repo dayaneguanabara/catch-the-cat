@@ -1,0 +1,141 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria:#22D4FD;
+    --cor-terciaria: #FFFFFF;
+
+    --fonte-primaria: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Krona One', sans-serif;
+} 
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    width: 100%;
+
+    /* max-width: 500px; */
+    min-width: 320px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--cor-primaria);
+
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+nav.menu {
+    display: flex;
+    gap: 3%;
+    padding: 3% 0 0 18%;
+}
+
+a.menu__links {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: 400;
+    text-align: center;
+}
+
+a.menu__links:hover {
+    color:white;
+}
+
+h1 {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+h2 {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.85rem;
+    margin-top: -10px;
+    line-height: 1.15;
+}
+
+main.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3.4% 18%;
+    gap: 5%;
+}
+
+section.container__content {
+    width: 50%;
+}
+
+p.container__texto-destaque {
+    font-weight: 800;
+}
+  
+div.container__botoes {
+    display: flex;
+    width: 100%;
+    margin: 5% 0;
+    gap: 5%;
+}
+a.container__cta {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap:5%;
+    padding: 2% 0;
+
+    border: 1px solid  var(--cor-secundaria);
+    border-radius: 10px;
+
+    font-size: 0.85rem;
+    font-weight: 400;
+
+    color: var(--cor-secundaria);
+}
+
+a.container__cta img {
+    width: 15%;
+}
+
+a.container__cta:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-weight: 500;
+}
+
+.container__img-destaque {
+    width: 50%;
+    margin: 4% 0 1% 0;
+}
+
+footer.rodape {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 0.1%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    nav.menu {
+        justify-content: center;
+        padding: 5% 0 0 0;
+    }
+
+    main.container {
+        flex-direction: column-reverse;
+        padding:2% 5%;
+        gap: 0;
+    }
+    section.container__content {
+        width: auto;
+    }
+}
