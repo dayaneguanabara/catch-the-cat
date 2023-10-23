@@ -1,0 +1,44 @@
+.hide {
+    display: none !important;
+}
+
+.inactive {
+    border-color: #808080 !important;
+    color: #808080 !important;
+    cursor: default !important;
+}
+
+.inactive img {
+    filter: opacity(0.7) saturate(1%);
+}
+
+button.inactive:hover {
+    background-color: transparent !important;
+    border-color: #808080 !important;
+    color: #808080 !important;
+    cursor: default !important;
+}
+
+.container__content_cases_titulos {
+    width: 50%;
+}
+
+.container__case {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+}
+
+section.container__content_cases {
+    width: 100% !important;
+}
+
+.container__case_texto {
+    width: 60%;
+}
+
+.container__case__img {
+    width: 40%;
+    margin: -15% 0 0 0;
+}

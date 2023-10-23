@@ -11,6 +11,7 @@
     
     <link rel="stylesheet" href="./estilos/normalize.css">
     <link rel="stylesheet" type="text/css" href="./estilos/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./estilos/cases-de-sucesso.css" media="screen" />
 
     <link rel="canonical" href="https://www.lurion.com.br">
     <link rel="icon" href="./assets/favicon.ico">
@@ -26,28 +27,56 @@
         </nav>
     </header>
     <main class="container">
-        <section class="container__content">
+        <section class="container__content container__content_cases">
             <!-- Titulos -->
-            <h1>Gatinhos encontrados</h1>
-            <h2>confira alguns cases de sucesso dos aussies</h2>
-            <!-- Texto central -->           
-            <p class="container__texto-destaque">Conheça o James, encontrado na rodovia Mogi-Bertioga.</p>
-            <p>Esse gatinho fujão ama sair para explorar novos territórios. Quem não fica feliz com essa história são seus pais, que já cansaram de trancar portas e janelas, mas, como num passe de mágica, James sempre escapa de novo.</p>
-            <p>Recentemente esse comportamento deu muita dor de cabeça para sua família. Ele saiu e nada de voltar para casa!</p>
-            <p>A solução foi pedir ajuda dos aussies, que caçaram o bichano pelas ruas de Mogi até encontrá-lo na Mogi-Bertioga.</p>
-            <p>Mais uma vez, o dia foi salvo graças a <strong>Lurion Catch the Cat! 😊 </strong></p> 
+            <div class="container__content_cases_titulos">
+                <h1>Gatinhos encontrados</h1>
+                <h2>confira alguns cases de sucesso dos aussies</h2>
+            </div>
+
+            <!-- Cases de Sucesso -->  
+            <div class="container__case" data-case="james">
+                <div class="container__case_texto">
+                    <h3>Conheça o James, encontrado na rodovia Mogi-Bertioga.</h3>
+                    <p>Esse gatinho fujão ama sair para explorar novos territórios. Quem não fica feliz com essa história são seus pais, que já cansaram de trancar portas e janelas, mas, como num passe de mágica, James sempre escapa de novo.</p>
+                    <p>Recentemente esse comportamento deu muita dor de cabeça para sua família. Ele saiu e nada de voltar para casa!</p>
+                    <p>A solução foi pedir ajuda dos aussies, que caçaram o bichano pelas ruas de Mogi até encontrá-lo na Mogi-Bertioga.</p>
+                    <p>Mais uma vez, o dia foi salvo graças a <strong>Lurion Catch the Cat! 😊 </strong></p> 
+                </div>
+                <img class="container__case__img" src="./assets/case-james.png" alt="Esse é o James, gato de 6 meses encontrado na rodovia Mogi-Bertioga.">
+            </div>
+            <div class="container__case hide" data-case="gata"> 
+                <div class="container__case_texto">
+                    <h3>Conheça a Gata, encontrada na vila Jau, em Poá/SP.</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                    <p>Mais uma vez, o dia foi salvo graças a <strong>Lurion Catch the Cat! 😊 </strong></p> 
+                </div>
+                <img class="container__case__img" src="./assets/case-gata.png" alt="Essa é a Gata, felina de 14 anos encontrada na vila Jau, em Poá/SP.">
+            </div>
+            <div class="container__case hide" data-case="milkway">   
+                <div class="container__case_texto">      
+                    <h3>Conheça a Gata, encontrada na vila Milkway, encontrada no interior de São Paulo</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                    <p>Mais uma vez, o dia foi salvo graças a <strong>Lurion Catch the Cat! 😊 </strong></p> 
+                </div>
+                <img class="container__case__img" src="./assets/case-milk.png" alt="Essa é a Milkway, mais conhecida como Milk, que foi encontrada no interior de São Paulo.">
+            </div>
             <!-- CTAs -->
-            <div class="container__botoes">
-                <a class="container__cta" href="#"">
+            <div class="container__buttons buttons__case">
+                <button class="container__cta inactive" data-button="previous" disabled>
                     <img src="assets/seta-esquerda.png" alt="Anterior">
-                    Anterior</a> 
-                <a class="container__cta" href="#">
+                    Anterior</button> 
+                <button class="container__cta" data-button="next">
                     <img src="assets/seta-direita.png" alt="Próximo">
-                    Próximo</a>  
+                    Próximo</button>  
             </div>
         </section>
-        <!-- Decoração -->
-        <img class="container__img-destaque" src="./assets/case-james.png " alt="Esse é o James, gato de 6 meses encontrado na rodovia Mogi-Bertioga">
+
+        <script type="text/javascript" src="next.js"></script>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Lurion Corp 2023.</p>
