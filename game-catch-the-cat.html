@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./estilos/normalize.css">
     <link rel="stylesheet" type="text/css" href="./estilos/style.css" media="screen" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+
     <link rel="canonical" href="https://www.lurion.com.br">
     <link rel="icon" href="./assets/favicon.ico">
     <title>Lurion Catch the Cat!</title>
@@ -31,19 +34,21 @@
             <h1>Teste suas habilidades:</h1>
             <h2>é hora de resgatar os gatinhos perdidos</h2>
             <!-- Texto central -->
-            <p class="container__texto-destaque">A mecânica do jogo é simples: procure nas imagens nossos gatinhos perdidos e ajude a CATCH THE CAT.</p> 
-            <p>Mas fique atento, eles podem estar em perigo, então não há tempo a perder. <strong>Você tem até 2 minutos para encontrá-los!</strong></p>
-            <p>Encontre todos os gatinhos, use o clique do mouse para resgatá-los e passe para a próxima fase. 😊</p>
-            <!-- CTAs -->
+            <p class="container__texto-destaque">A mecânica do jogo é simples: procure na imagem os 10 gatinhos perdidos e ajude a CATCH THE CAT.</p> 
+            <p>Mas fique atento, eles podem estar em perigo, então não há tempo a perder. <strong>Você tem 60 segundos para encontrá-los!</strong></p>
+            <p>Encontre todos os gatinhos, use o clique do mouse para resgatá-los e seja o ganhador do jogo. 😊</p>
+            <!-- CTAs 
             <div class="container__buttons">
-                <a class="container__cta" href="#">
+                <button class="container__cta container__buttons__play">
                     <img src="assets/jogar.png" alt="Começar o jogo">
-                    PLAY</a> 
-                <a class="container__cta" href="https://api.whatsapp.com/send/?phone=5521998453223">
+                    PLAY</button> 
+                <button class="container__cta container__buttons__finish">
                     <img src="assets/pausa.png" alt="Parar o jogo">
-                    PAUSE</a>  
-            </div>
+                    FINISH</button>  
+            </div>-->
         </section>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/p5.collide2d.js"></script>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Lurion Corp 2023.</p>

@@ -1,0 +1,47 @@
+.container__content_dicas {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+    width: 100% !important;
+}
+
+.container__content_dicas_textos {
+    width: 60%;
+}
+
+.container__content_dicas_textos p {
+    font-size: 1.2rem;
+}
+
+.container__dicas__img {
+    width: 40%;
+
+}
+
+.container__content_dicas_lista {
+    margin-top: 5%;
+}
+.container__content_dicas_lista strong {
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    line-height:4.5rem;
+    font-weight: 600;
+}
+
+.container__content_dicas_lista ol {
+    font-size: 1.3rem;
+    line-height:2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container__content_dicas_lista ol li {
+    margin-bottom: 5%;
+}
+
+.container__content_dicas_lista img {
+    width: 70%;
+    margin-top: 3%;
+}

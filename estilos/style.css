@@ -78,7 +78,7 @@ p.container__texto-destaque {
 div.container__buttons {
     display: flex;
     width: 100%;
-    margin: 5% 0;
+    margin: 5% 0 0 0;
     gap: 5%;
 }
 .container__cta {
